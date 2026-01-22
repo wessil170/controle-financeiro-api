@@ -1,68 +1,65 @@
 # Controle Financeiro API
 
-API REST simples para controle financeiro, desenvolvida com FastAPI.
-O projeto permite criar, listar, atualizar e remover lançamentos financeiros
-(receitas e despesas).
+API REST para controle financeiro pessoal, desenvolvida com **FastAPI**, com foco em **CRUD de lançamentos financeiros**, **validação de dados** e boas práticas de desenvolvimento de APIs REST.
 
-## Tecnologias utilizadas
+O projeto permite criar, listar, atualizar e remover lançamentos financeiros (receitas e despesas), simulando o backend de um sistema real.
 
-- Python 3
-- FastAPI
-- Pydantic
-- Uvicorn
+## Objetivos do Projeto
+
+- Praticar o desenvolvimento de APIs REST com FastAPI  
+- Implementar operações CRUD  
+- Aplicar validação de dados com Pydantic  
+- Organizar um projeto backend simples para portfólio  
+
+## Tecnologias Utilizadas
+
+- Python 3  
+- FastAPI  
+- Pydantic  
+- Uvicorn  
 
 ## Funcionalidades
 
-- Criar lançamento financeiro
-- Listar lançamentos
-- Atualizar lançamento por ID
-- Remover lançamento por ID
-- Validação de dados
+- Criar lançamentos financeiros  
+- Listar lançamentos  
+- Atualizar lançamento por ID  
+- Remover lançamento por ID  
+- Validação automática de dados  
 
-## Estrutura do projeto
+## Estrutura do Projeto
 
-controle-financeiro-api/
-├── app.py
-└── README.md
-
+controle-financeiro-api/  
+├── app.py  
+└── README.md  
 
 ## Como executar o projeto
 
-### 1. Clonar o repositório
-```bash
-git clone https://github.com/SEU_USUARIO/controle-financeiro-api.git
-cd controle-financeiro-api
+1. Clonar o repositório  
+git clone https://github.com/SEU_USUARIO/controle-financeiro-api.git  
+cd controle-financeiro-api  
 
-2. Criar ambiente virtual
-python3 -m venv venv
-source venv/bin/activate
+2. Criar ambiente virtual  
+python3 -m venv venv  
+source venv/bin/activate  
 
-3. Instalar dependências
-pip install fastapi uvicorn
+3. Instalar dependências  
+pip install fastapi uvicorn  
 
-4. Executar a aplicação
-python -m uvicorn app:app --reload
+4. Executar a aplicação  
+python -m uvicorn app:app --reload  
 
-5. Acessar a documentação
-http://127.0.0.1:8000/docs
-Exemplos de endpoints
+5. Acessar a documentação  
+Swagger UI disponível em: http://127.0.0.1:8000/docs  
 
-GET /lancamentos
+## Endpoints Disponíveis
 
-POST /lancamentos
+- GET /lancamentos  
+- POST /lancamentos  
+- PUT /lancamentos/{id}  
+- DELETE /lancamentos/{id}  
 
-PUT /lancamentos/{id}
+## Primeiro commit (importante)
 
-DELETE /lancamentos/{id}
-
-
-Salve.
-
----
-
-## 6️⃣ Primeiro commit (importante)
-
-```bash
-git status
-git add .
-git commit -m "Projeto inicial: API de controle financeiro com FastAPI"
+git status  
+git add .  
+git commit -m "Projeto inicial: API de controle financeiro com FastAPI"  
